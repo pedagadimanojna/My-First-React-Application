@@ -1,0 +1,141 @@
+/* App.css */
+
+form {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px #007bff;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.show-hide-btn {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  background-color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #007bff;
+  transition: background-color 0.2s ease;
+}
+
+.show-hide-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0 0 8px 0;
+}
+.form-summary {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-summary h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.summary-row:hover {
+  transform: scale(1.02);
+}
+.summary-row {
+  display: flex;
+  gap: 10px; /* small gap between label and value */
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.summary-label {
+  width: 120px; /* fixed width for all labels */
+  font-weight: 600;
+  color: #333;
+}
+
+.summary-value {
+  color: #555;
+  font-family: monospace;
+  flex: 1; /* take remaining space */
+}
+.form-summary {
+  max-width: 450px; /* smaller than before */
+  
+}
+
